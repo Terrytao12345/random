@@ -7,9 +7,11 @@
 import random
 
 r = random.randint(1, 100)
+count = 0
 
 while True :
 	#print(r)
+	count += 1 # <==> count = count + 1 
 	user = input("請猜一個數字")
 	if int(user) > int(r) :
 		print(" user > answer　") 
@@ -18,5 +20,7 @@ while True :
 	else :
 		if int(user) == int(r) :
 			print("bingo")
+			print("你猜了第", count, '次')
 	#break #break放這是每猜完一次結束　並重執行　不同數字
 			break #猜錯就持續猜　並到最後對時才結束
+	print("你猜了第", count, '次')
