@@ -6,7 +6,9 @@
 
 import random
 
-r = random.randint(1, 100)
+start = input('請決定起始數字')
+end = input('請決定結束數字')
+r = random.randint(int(start), int(end))
 count = 0
 
 while True :
